@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Flags Quiz</string>
+    <string name="welcome">Hi there touch anywhere to start when you ready</string>
+    <string name="next_txt">Next</string>
+    <string name="reset_txt">Reset</string>
+    <string name="quit">Quit</string>
+    <string name="startMsg">Let\'s see what you got :)</string>
+    <string name="chooseMsg">Choose one answer</string>
+    <string name="rightMsg">That\'s right \n keep going :)</string>
+    <string name="wrongMsg">That\'s not your lucky day</string>
+    <string name="start_again">Let\'s start again</string>
+    <string name="quest">This flag for which country?</string>
+    <string name="greece">Greece</string>
+    <string name="egypt">Egypt</string>
+    <string name="brasil">Brasil</string>
+    <string name="andora">Andora</string>
+    <string name="albania">Albania</string>
+    <string name="armenia">Armenia</string>
+    <string name="bangladesh">Bangladsh</string>
+    <string name="cambodia">Cambodia</string>
+    <string name="chad">Chad</string>
+    <string name="cyprus">Cyprus</string>
+    <string name="gabon">Gabon</string>
+    <string name="georgia">Georgia</string>
+    <string name="greenland">Green Land</string>
+    <string name="palestine">Palestine</string>
+    <string name="sanMarino">San Marino</string>
+    <string name="uae">United Arab Emirates</string>
+</resources>

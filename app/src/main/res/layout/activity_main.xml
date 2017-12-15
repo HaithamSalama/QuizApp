@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:keepScreenOn="true"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/start_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".7"
+            android:onClick="quizStart"
+            android:paddingTop="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/start"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/start_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#78000000"
+            android:fontFamily="@font/hermes"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/welcome"
+            android:textColor="#2fa9ff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/flag_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/start_txt"
+            android:layout_marginTop="24dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/andorra_texture"
+            android:visibility="invisible" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flag_img"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/first_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="firstAnswer"
+                android:text="@string/greece"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/second_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="secondAnswer"
+                android:text="@string/andora"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/third_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="thirdAnswer"
+                android:text="@string/brasil"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="48dp"
+            android:text="@string/next_txt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:onClick="nextQuestion"/>
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/next_button"
+            android:layout_alignBottom="@+id/next_button"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            android:text="@string/quit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:onClick="quit"/>
+    </RelativeLayout>
+
+</ScrollView>
