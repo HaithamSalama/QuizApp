@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#78000000"
-            android:fontFamily="@font/hermes"
+            android:fontFamily="sans-serif-condensed"
             android:gravity="center"
             android:padding="10dp"
             android:text="@string/welcome"
@@ -87,6 +87,32 @@
 
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_txt"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/third_rail_demo"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ff0000"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numResultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resultText"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ff0000"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
@@ -95,11 +121,13 @@
             android:layout_alignStart="@+id/radioGroup"
             android:layout_below="@+id/radioGroup"
             android:layout_marginTop="48dp"
+            android:fontFamily="@font/third_rail_demo"
+            android:onClick="nextQuestion"
             android:text="@string/next_txt"
+            android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:visibility="invisible"
-            android:onClick="nextQuestion"/>
+            android:visibility="invisible" />
 
         <Button
             android:id="@+id/quit_button"
@@ -111,11 +139,15 @@
             android:layout_alignParentRight="true"
             android:layout_marginEnd="71dp"
             android:layout_marginRight="71dp"
+            android:fontFamily="@font/third_rail_demo"
+            android:onClick="quit"
             android:text="@string/quit"
+            android:textAllCaps="false"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:visibility="invisible"
-            android:onClick="quit"/>
+            android:visibility="invisible" />
+
+
     </RelativeLayout>
 
 </ScrollView>
